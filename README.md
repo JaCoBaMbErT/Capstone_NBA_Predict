@@ -22,7 +22,7 @@ seasongame: The number of games played in the season by the team.
 Target Variable
 game_result: The outcome of the game (Win/Loss).
 
-
+![heatmap]
 
 Methodology
 
@@ -56,6 +56,8 @@ Parameter optimization emerged as a crucial step in enhancing model performance.
 
 Cross-validation provided valuable insights into the model's stability and performance across different subsets of the data. The consistent accuracy scores across folds suggest that the ExtraTreesClassifier model is robust, with minimal overfitting to the training data. This reliability is crucial for practical applications of the model in predicting game outcomes, where the ability to generalize from historical data to future games is paramount.
 
+
+![confusion](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/final%20confusion.png)
 
 ## Recomendations
 
