@@ -50,10 +50,14 @@ After initial exploratory data analysis and preprocessing, we used RandomizedSea
 The model's performance was evaluated using a variety of metrics to provide a comprehensive overview of its predictive capabilities:
 
 Accuracy: The model achieved an accuracy of 67.98%, indicating a fair level of correct predictions across the dataset.
+
 Precision: With a precision of 68.28%, the model shows a satisfactory level of reliability in its positive predictions.
+
 Recall: The recall of 67.87% reflects the model's ability to identify the majority of positive instances correctly.
 F1 Score: An F1 Score of 68.07% suggests that the model maintains a balanced performance between precision and recall.
+
 ROC AUC: A score of 74.61% in the ROC AUC metric indicates good discriminative ability between the positive and negative classes.
+
 A confusion matrix was also generated to visualize the model's performance, providing a clear picture of the true positives and negatives, as well as the false positives and negatives. This matrix is crucial for understanding the model in the context of its ability to predict the winning and losing teams in a sports game scenario.
 
 The model's performance metrics suggest it can serve as a reliable tool for predictive analysis in the domain it was designed for. While it demonstrates a solid foundation, further improvements could be made by exploring additional feature engineering, model ensembling, and domain-specific adjustments.
