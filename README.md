@@ -24,7 +24,6 @@ game_result: The outcome of the game (Win/Loss).
 
 ![heatmap]
 
-## Methodology
 
 ## Data Preprocessing: Encoding categorical variables and generating new features.
 Feature Selection: Identifying relevant features for predicting game outcomes.
@@ -32,7 +31,7 @@ Model Training and Evaluation: Training RandomForestClassifier and ExtraTreesCla
 Cross-validation: Performing cross-validation to evaluate the models' performance accurately.
 
 
-##Installation
+## Installation
 To run this project, you need Python 3.x and the following libraries:
 pandas
 scikit-learn
@@ -42,17 +41,17 @@ numpy
 To execute the project, run the Jupyter Notebook (final.notebook.iypnb). Ensure the dataset nbaallelo.csv is in the correct path as specified in the notebook.
 
 
-##Model Performance
+## Model Performance
 
 Initially, the RandomForestClassifier was trained with default parameters, resulting in an accuracy score of approximately 65.7%. Recognizing the potential for improvement, we conducted parameter optimization using GridSearchCV, which allowed us to fine-tune the model parameters. The optimized RandomForestClassifier demonstrated a slight improvement in accuracy, achieving approximately 65.9%. This indicates that even minor adjustments to the model parameters can lead to better predictive performance.
 
 The ExtraTreesClassifier was also evaluated, both with default parameters and after cross-validation. The cross-validation process, involving 5 folds, provided a more robust evaluation of the model's performance, accounting for variance in the training data. The accuracy scores across the folds were consistent, with a mean cross-validation accuracy of approximately 65.9% and a low standard deviation. This consistency underscores the model's reliability in predicting game outcomes across different data subsets.
 
-##Parameter Optimization
+## Parameter Optimization
 
 Parameter optimization emerged as a crucial step in enhancing model performance. For the RandomForestClassifier, the best parameters identified included a maximum depth of 9, a max_features setting of 'log2', a minimum samples leaf of 8, a minimum samples split of 2, and 366 estimators. These optimized parameters contributed to the model's improved accuracy, highlighting the importance of fine-tuning to adapt the model to the specific characteristics of the dataset.
 
-##Insights from Cross-validation
+## Insights from Cross-validation
 
 Cross-validation provided valuable insights into the model's stability and performance across different subsets of the data. The consistent accuracy scores across folds suggest that the ExtraTreesClassifier model is robust, with minimal overfitting to the training data. This reliability is crucial for practical applications of the model in predicting game outcomes, where the ability to generalize from historical data to future games is paramount.
 
