@@ -12,7 +12,7 @@ The dataset used (nbaallelo.csv) comprises various features related to NBA games
 ![data info](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/data%20values.png)
 
 
-Overview
+## Overview
 
 Features
 elo_i, opp_elo_i: ELO ratings of the teams at the start of the game.
