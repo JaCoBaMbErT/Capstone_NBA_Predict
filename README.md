@@ -2,7 +2,7 @@ NBA Game Outcome Prediction
 
 Overview
 
-This capstone project aims to predict the outcomes of NBA games with high accuracy. Leveraging historical game data, the project applies machine learning techniques to understand the patterns and factors that influence game results. RandomForestClassifier and ExtraTreesClassifier are the primary algorithms used, with a focus on optimizing their parameters for better performance.
+This capstone project aims to predict the outcomes of NBA games. Leveraging historical game data, the project applies machine learning techniques to understand the patterns and factors that influence game results. RandomForestClassifier and ExtraTreesClassifier are the primary algorithms used, with a focus on optimizing their parameters for better performance.
 
 Data
 The dataset used (nbaallelo.csv) comprises various features related to NBA games, including team performance metrics, game locations, and results. The data preprocessing step involves encoding categorical variables and generating new features to improve model predictions.
