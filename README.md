@@ -12,9 +12,9 @@ The dataset used (nbaallelo.csv) comprises various features related to NBA games
 ![data info](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/data%20values.png)
 
 
-### Overview
+Overview
 
-### Features
+Features
 elo_i, opp_elo_i: ELO ratings of the teams at the start of the game.
 game_location: The location of the game (Home/Away).
 avg_pts: The average points scored by the team up to the current game.
@@ -26,13 +26,13 @@ game_result: The outcome of the game (Win/Loss).
 
 Methodology
 
-## Data Preprocessing: Encoding categorical variables and generating new features.
+####Data Preprocessing: Encoding categorical variables and generating new features.
 Feature Selection: Identifying relevant features for predicting game outcomes.
 Model Training and Evaluation: Training RandomForestClassifier and ExtraTreesClassifier models, followed by accuracy assessment and parameter optimization.
 Cross-validation: Performing cross-validation to evaluate the models' performance accurately.
 
 
-Installation
+##Installation
 To run this project, you need Python 3.x and the following libraries:
 pandas
 scikit-learn
@@ -42,7 +42,7 @@ numpy
 To execute the project, run the Jupyter Notebook (final.notebook.iypnb). Ensure the dataset nbaallelo.csv is in the correct path as specified in the notebook.
 
 
-## Model Performance
+##Model Performance
 
 Initially, the RandomForestClassifier was trained with default parameters, resulting in an accuracy score of approximately 65.7%. Recognizing the potential for improvement, we conducted parameter optimization using GridSearchCV, which allowed us to fine-tune the model parameters. The optimized RandomForestClassifier demonstrated a slight improvement in accuracy, achieving approximately 65.9%. This indicates that even minor adjustments to the model parameters can lead to better predictive performance.
 
