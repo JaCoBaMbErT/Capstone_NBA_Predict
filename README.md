@@ -24,9 +24,9 @@ game_result: The outcome of the game (Win/Loss).
 
 ![heatmap]
 
-Methodology
+## Methodology
 
-####Data Preprocessing: Encoding categorical variables and generating new features.
+## Data Preprocessing: Encoding categorical variables and generating new features.
 Feature Selection: Identifying relevant features for predicting game outcomes.
 Model Training and Evaluation: Training RandomForestClassifier and ExtraTreesClassifier models, followed by accuracy assessment and parameter optimization.
 Cross-validation: Performing cross-validation to evaluate the models' performance accurately.
