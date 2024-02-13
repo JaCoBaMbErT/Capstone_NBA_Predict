@@ -1,5 +1,7 @@
 NBA Game Outcome Prediction
 
+![intro numbers](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/sports%20book%20numebrs.JPG)
+
 Overview
 
 This capstone project aims to predict the outcomes of NBA games. Leveraging historical game data, the project applies machine learning techniques to understand the patterns and factors that influence game results. RandomForestClassifier and ExtraTreesClassifier are the primary algorithms used, with a focus on optimizing their parameters for better performance.
