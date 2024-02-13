@@ -43,9 +43,20 @@ To execute the project, run the Jupyter Notebook (final.notebook.iypnb). Ensure 
 
 ## Model Performance
 
-Initially, the RandomForestClassifier was trained with default parameters, resulting in an accuracy score of approximately 65.7%. Recognizing the potential for improvement, we conducted parameter optimization using GridSearchCV, which allowed us to fine-tune the model parameters. The optimized RandomForestClassifier demonstrated a slight improvement in accuracy, achieving approximately 65.9%. This indicates that even minor adjustments to the model parameters can lead to better predictive performance.
+The final model for this project was developed through a rigorous process of feature selection, model selection, and hyperparameter tuning. We employed an XGBoost classifier, a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework, which is renowned for its performance in classification tasks.
 
-The ExtraTreesClassifier was also evaluated, both with default parameters and after cross-validation. The cross-validation process, involving 5 folds, provided a more robust evaluation of the model's performance, accounting for variance in the training data. The accuracy scores across the folds were consistent, with a mean cross-validation accuracy of approximately 65.9% and a low standard deviation. This consistency underscores the model's reliability in predicting game outcomes across different data subsets.
+After initial exploratory data analysis and preprocessing, we used RandomizedSearchCV for an extensive search across a wide hyperparameter space. This helped us in quickly identifying promising areas for parameters that influence the model's performance. To fine-tune these parameters, we subsequently applied GridSearchCV, which performed an exhaustive search over a refined hyperparameter grid around the promising values identified in the previous step.
+
+The model's performance was evaluated using a variety of metrics to provide a comprehensive overview of its predictive capabilities:
+
+Accuracy: The model achieved an accuracy of 67.98%, indicating a fair level of correct predictions across the dataset.
+Precision: With a precision of 68.28%, the model shows a satisfactory level of reliability in its positive predictions.
+Recall: The recall of 67.87% reflects the model's ability to identify the majority of positive instances correctly.
+F1 Score: An F1 Score of 68.07% suggests that the model maintains a balanced performance between precision and recall.
+ROC AUC: A score of 74.61% in the ROC AUC metric indicates good discriminative ability between the positive and negative classes.
+A confusion matrix was also generated to visualize the model's performance, providing a clear picture of the true positives and negatives, as well as the false positives and negatives. This matrix is crucial for understanding the model in the context of its ability to predict the winning and losing teams in a sports game scenario.
+
+The model's performance metrics suggest it can serve as a reliable tool for predictive analysis in the domain it was designed for. While it demonstrates a solid foundation, further improvements could be made by exploring additional feature engineering, model ensembling, and domain-specific adjustments.
 
 ## Parameter Optimization
 
