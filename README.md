@@ -9,6 +9,9 @@ This capstone project aims to predict the outcomes of NBA games. Leveraging hist
 ## Data Understanding
 The dataset used (nbaallelo.csv) comprises various features related to NBA games, including team performance metrics, game locations, and results. The data preprocessing step involves encoding categorical variables and generating new features to improve model predictions.
 
+![data info](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/data%20values.png)
+
+
 ### Overview
 
 ### Features
@@ -18,6 +21,9 @@ avg_pts: The average points scored by the team up to the current game.
 seasongame: The number of games played in the season by the team.
 Target Variable
 game_result: The outcome of the game (Win/Loss).
+
+
+
 Methodology
 
 ## Data Preprocessing: Encoding categorical variables and generating new features.
