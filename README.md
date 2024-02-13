@@ -54,6 +54,7 @@ Accuracy: The model achieved an accuracy of 67.98%, indicating a fair level of c
 Precision: With a precision of 68.28%, the model shows a satisfactory level of reliability in its positive predictions.
 
 Recall: The recall of 67.87% reflects the model's ability to identify the majority of positive instances correctly.
+
 F1 Score: An F1 Score of 68.07% suggests that the model maintains a balanced performance between precision and recall.
 
 ROC AUC: A score of 74.61% in the ROC AUC metric indicates good discriminative ability between the positive and negative classes.
