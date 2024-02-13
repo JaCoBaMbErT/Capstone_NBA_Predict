@@ -22,7 +22,7 @@ seasongame: The number of games played in the season by the team.
 Target Variable
 game_result: The outcome of the game (Win/Loss).
 
-![heatmap]
+![heatmap](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/heatmap.png)
 
 
 ## Data Preprocessing: Encoding categorical variables and generating new features.
