@@ -22,7 +22,7 @@ seasongame: The number of games played in the season by the team.
 Target Variable
 game_result: The outcome of the game (Win/Loss).
 
-![heatmap]
+![heatmap](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/heatmap.png)
 
 
 ## Data Preprocessing: Encoding categorical variables and generating new features.
@@ -65,12 +65,11 @@ The model's performance metrics suggest it can serve as a reliable tool for pred
 
 ## Parameter Optimization
 
-Parameter optimization emerged as a crucial step in enhancing model performance. For the RandomForestClassifier, the best parameters identified included a maximum depth of 9, a max_features setting of 'log2', a minimum samples leaf of 8, a minimum samples split of 2, and 366 estimators. These optimized parameters contributed to the model's improved accuracy, highlighting the importance of fine-tuning to adapt the model to the specific characteristics of the dataset.
+Initially, we used RandomizedSearchCV to explore a wide range of hyperparameters. This method randomly selects a subset of parameter combinations from a specified distribution. The advantage of this approach is its efficiency, allowing us to cover a broad spectrum of possibilities without the exhaustive computation required for testing every possible combination. Key parameters such as max_depth, min_child_weight, subsample, colsample_bytree, gamma, learning_rate, and n_estimators were varied. This stage helped us quickly identify promising regions within the hyperparameter space where the model showed improved performance.
 
-## Insights from Cross-validation
+With insights gained from the randomized search, we moved to a more focused and precise method—GridSearchCV. This technique conducted an exhaustive search over a specified parameter grid, but this time with narrower ranges centered around the best values found during the randomized search. This meticulous approach allowed us to fine-tune the hyperparameters, ensuring the model was optimized for the highest accuracy. Parameters were adjusted in small increments to discern the combination that yielded the best model performance according to our evaluation metrics, such as accuracy and F1 score.
 
-Cross-validation provided valuable insights into the model's stability and performance across different subsets of the data. The consistent accuracy scores across folds suggest that the ExtraTreesClassifier model is robust, with minimal overfitting to the training data. This reliability is crucial for practical applications of the model in predicting game outcomes, where the ability to generalize from historical data to future games is paramount.
-
+The outcome of this two-step optimization process was a set of hyperparameters that were ideally suited for our XGBoost classifier, balancing the model's ability to accurately predict outcomes while avoiding overfitting. This optimized model demonstrated improved accuracy and generalization capability on unseen data, as evidenced by its performance metrics
 
 ![confusion](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/final%20confusion.png)
 
