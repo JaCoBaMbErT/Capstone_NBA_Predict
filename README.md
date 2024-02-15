@@ -73,7 +73,8 @@ The outcome of this two-step optimization process was a set of hyperparameters t
 
 ![confusion](https://github.com/JaCoBaMbErT/Capstone_NBA_Predict/blob/main/Images/final%20confusion.png)
 
-## Recomendations
+
+## Results & Recomendations
 
 The results of this project underscore the potential of machine learning models to predict sports outcomes with a reasonable degree of accuracy. While the improvements from parameter optimization were modest, they were nonetheless critical in enhancing the models' predictive power. The consistency in cross-validation results further assures us of the models' reliability and their potential utility in applications such as sports betting, team strategy development, and fan engagement initiatives.
 
