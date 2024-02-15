@@ -79,5 +79,11 @@ The results of this project underscore the potential of machine learning models 
 
 Future work could explore additional features, alternative modeling techniques, and more advanced forms of parameter optimization to further improve predictive accuracy. Additionally, incorporating more granular data, such as player-level statistics and real-time game conditions, could offer deeper insights and potentially higher accuracy in game outcome predictions, as well setting up a rolling five game model to incorporate from the current season.
 
+## Repo Structure
+-Data
+-Images
+-Notebook
+-Read.me
+-Game prediction.pdf
 
 
